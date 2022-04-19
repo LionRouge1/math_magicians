@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -19,8 +19,19 @@ table {
   border-collapse: collapse;
 }
 
-table tr, th {
+table tr,
+table th {
   height: 50px;
+}
+
+table td {
+  border: 1px solid #d1d1d1;
+  width: 50px;
+}
+
+table tr td:nth-child(4),
+table tr:nth-child(6) td:nth-child(3) {
+  background-color: #f5913e;
 }
 
 table #screen td {
@@ -30,14 +41,4 @@ table #screen td {
   font-size: 20px;
   font-weight: bold;
   padding: 5px;
-}
-
-table tr td:nth-child(4),
-table tr:nth-child(6) td:nth-child(3) {
-  background-color: #f5913e;
-}
-
-table td {
-  border: 1px solid #d1d1d1;
-  width: 50px;
 }
