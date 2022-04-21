@@ -27,6 +27,7 @@ table th {
 table td {
   border: 1px solid #d1d1d1;
   width: 50px;
+  cursor: pointer;
 }
 
 table tr td:nth-child(4),
