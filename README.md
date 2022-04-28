@@ -4,6 +4,9 @@
    - Make simple calculations.
    - Read a random math-related quote.
 
+## Live Demo
+-  Deploying with Heroku [Here](https://math-magicians-lion.herokuapp.com/)
+-  Deploying with Netlify [Here](https://626acebf56e40e0a1c1a633e--dulcet-caramel-2ee8e6.netlify.app/)
 ## Built With
 
 - Built with React
