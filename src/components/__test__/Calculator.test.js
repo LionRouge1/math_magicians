@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import '@testing-library/jest-dom'
+import '@testing-library/jest-dom';
 import Calculator from '../Calculator';
 
 describe('Calculator component', () => {
@@ -16,7 +16,7 @@ describe('Calculator component', () => {
       />);
       const screencal = screen.getByTestId(/screen/i);
       const buttonElement = screen.getByText(/8/);
-      fireEvent.click(buttonElement)
+      fireEvent.click(buttonElement);
       expect(screencal.textContent).toBe(buttonElement.textContent);
     });
 
@@ -26,8 +26,8 @@ describe('Calculator component', () => {
       />);
       const screencal = screen.getByTestId(/screen/i);
       const buttonElement = screen.getByText(/4/);
-      fireEvent.click(buttonElement)
+      fireEvent.click(buttonElement);
       expect(screencal.textContent).toBe(buttonElement.textContent);
     });
-  })
+  });
 });

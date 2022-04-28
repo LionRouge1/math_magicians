@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
-import {BrowserRouter as Router} from 'react-router-dom';
-import '@testing-library/jest-dom'
+import { BrowserRouter as Router } from 'react-router-dom';
+import '@testing-library/jest-dom';
 import Navbar from '../Navbar';
 
 describe('Navigation page', () => {
@@ -8,17 +8,17 @@ describe('Navigation page', () => {
     render(
       <Router>
         <Navbar />
-      </Router>
+      </Router>,
     );
     const navBar = screen.getByRole('navigation');
     expect(navBar).toBeInTheDocument();
   });
-  
+
   it('Number of links', () => {
     render(
       <Router>
         <Navbar />
-      </Router>
+      </Router>,
     );
     const linkElement = screen.getAllByRole('link');
     expect(linkElement.length).toBe(3);
