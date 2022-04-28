@@ -13,7 +13,7 @@ function Calculator() {
   const element = (
     <table>
       <tbody>
-        <tr id="screen">
+        <tr data-testid="screen" id="screen">
           <td colSpan="4">
             {total}
             {operation}
